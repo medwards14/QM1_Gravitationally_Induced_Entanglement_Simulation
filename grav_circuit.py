@@ -39,7 +39,7 @@ if USE_REAL_BACKEND:
     backend = service.backend(backend_name)
     transpilation_backend = backend
     
-    # updating qubits to the optimal ibm_fez qubits on 11/19/25 
+    # updating qubits to the optimal ibm_fez qubits on 11/27/25 
     qubit_0 = 4
     qubit_1 = 5
 else:
