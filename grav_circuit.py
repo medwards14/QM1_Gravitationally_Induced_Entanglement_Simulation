@@ -246,7 +246,7 @@ def two_qubit_pauli_settings() -> List[str]:
     return [''.join(bs) for bs in product(PAULI_BASES, repeat = 2)]
 
 # This function
-#   1. prepares the bell state |psi 5>
+#   1. prepares the final state |psi 5>
 #   2. applies basis pre-rotation
 #   3. measures the qubits and stores the readout into 2 classical bits
 #   4. adds results to program's metadata as {"basis": basis_label, "sys_index": [0, 1]}
@@ -472,7 +472,7 @@ if __name__ == "__main__":
     # defining a constant phi_1 for the variable delta_phi plot
     fixed_phi_1 = 0.0
 
-    # sampling 30 phase values between 0 and 2 pi to plot
+    # sampling 15 phase values between 0 and 2 pi to plot
     n_phase_values = 15
     delta_phi_values = np.linspace(0.0, 2.0 * np.pi, n_phase_values)
 
