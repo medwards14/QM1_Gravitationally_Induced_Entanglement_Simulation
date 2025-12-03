@@ -246,7 +246,7 @@ def two_qubit_pauli_settings() -> List[str]:
     return [''.join(bs) for bs in product(PAULI_BASES, repeat = 2)]
 
 # This function
-#   1. prepares the bell state |Omega_0> = (1/sqrt(2))(|00> + |11>)
+#   1. prepares the bell state |psi 5>
 #   2. applies basis pre-rotation
 #   3. measures the qubits and stores the readout into 2 classical bits
 #   4. adds results to program's metadata as {"basis": basis_label, "sys_index": [0, 1]}
